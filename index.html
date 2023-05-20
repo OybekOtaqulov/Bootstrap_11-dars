@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Open Modal
+            </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>It's Modal header</h4><span class="close" data-dismiss="modal">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <h4>It's Modal body</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-info" data-placement="bottom" data-toggle="tooltip" title="Login">
+                Tizmga kirish
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-success" data-toggle="popover" data-placement="top" title="Hello world!" data-content="Salom dunyo!">
+                Tizmga kirish
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-6 offset-3">
+            <div class="card">
+                <div class="card-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="login">loginni kriting</label>
+                            <input type="text" id="login" class="form-control" placeholder="loginni kriting">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Parolni kriting</label>
+                            <input type="text" id="password" class="form-control" placeholder="Parolni kriting">
+                        </div>
+                        <div class="form-group">
+                            <label for="dist">Qoshimcha ma'lumotlar</label>
+                            <textarea name="dist" id="dist" class="form-control" placeholder="Qoshimcha ma'lumotlar"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="region">Regionni tanlang</label>
+                            <select name="region" id="region">
+                                <option value="1">Toshkent</option>
+                                <option value="2">Samarqand</option>
+                                <option value="3">Buxoro</option>
+                                <option value="4">Xorazm</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-success float-right">Tizmga kirish</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-md-6 offset-3">
+            <form action="#">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                            All cetegories
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-item">Home</div>
+                            <div class="dropdown-item">Shop</div>
+                            <div class="dropdown-item">Health and Safety</div>
+                            <div class="dropdown-item">Baby Clothes</div>
+                            <div class="dropdown-item">Baby Toys</div>
+                            <div class="dropdown-item">Pages</div>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" name="search" placeholder="Serach...">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-danger">&telrec;</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/jQuery.min.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
